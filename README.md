@@ -1,6 +1,6 @@
 ![image](assets/hi.gif)
 
-<img align="right" alt="GIF" src="assets/hi!.gif" width="349" height="218" />
+<img align="right" alt="GIF" src="assets/hi!.gif" width="280" height="218" />
 
 👨‍💻  _you better learn about me here:_
 
