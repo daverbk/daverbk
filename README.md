@@ -1,16 +1,16 @@
-![image](assets/hi.gif)
+<div align="center">
+    <img align="center" alt="GIF" src="assets/hi.gif" width="280" height="218"/>
+    <br>
 
-<img align="right" alt="GIF" src="assets/hi!.gif" width="280" height="218" />
-
-👨‍💻  _you better learn about me here:_
+### 👨‍💻 learn about me on LinkedIn
 
 <a href="https://www.linkedin.com/in/david-ryabko/">
     <code>
         <img height="20" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">
-</code>
+    </code>
 </a>
 
-🔧  _langs and tools:_
+### 🔧 langs and tools
 
 <code>
     <img height="20" src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white">
@@ -32,10 +32,10 @@
 </code>
 
 
-📈  _github stats:_
+### 📈 github stats
 
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=daverbk&theme=default&date_format=M%20j%5B%2C%20Y%5D)](https://git.io/streak-stats)
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=daverbk&hide_border=true&border_radius=8&mode=weekly&fire=DD2727&stroke=DD2727)](https://git.io/streak-stats)
 
-
+</div>
 
 
