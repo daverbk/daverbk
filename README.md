@@ -13,10 +13,10 @@
 </p>
 <p>
     <a href="https://github.com/daverbk">
-        <img width="50%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=daverbk&theme=dark&langs_count=5&bg_color=101010&&layout=compact&border_color=3B3B3B&text_color=CCCCCC&title_color=CCCCCC">
+        <img width="50%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=daverbk&theme=dark&langs_count=5&bg_color=101010&&layout=compact&border_color=3B3B3B&text_color=CCCCCC&hide_title=true">
     </a>
      <a href="https://leetcode.com/daverbk/">
-        <img width="47%" src="https://leetcard.jacoblin.cool/daverbk?theme=dark&font=Baloo%20Thambi%202&ext=heatmap&border=2&border_radius=7">
+        <img width="47%" src="https://leetcard.jacoblin.cool/daverbk?theme=dark&font=Baloo%20Thambi%202&border=2&border_radius=7">
     </a>
 </p>
 
