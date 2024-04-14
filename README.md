@@ -1,16 +1,16 @@
 <div align="center">
 
-# Hi there 👋
+### Hi there 👋
 
 ![Profile Views](https://komarev.com/ghpvc/?username=daverbk&color=lightgrey)
 
-## About Me
+#### About Me
 
 👨‍💻 Software development and testing enthusiast 👨‍💻  
 🐶 Bull Terriers fan 🐶  
 📸 Viby pictures taker (sometimes) 📸
 
-## My Stats
+#### My Stats
 
 <table align="center">
     <tr>
@@ -35,7 +35,7 @@
     </tr>
 </table>
 
-## Melodic vibes
+#### Melodic vibes
 
 <table align="center">
     <tr>
