@@ -25,6 +25,14 @@
             </details>
         </td>
         <td>
+            <details><summary>Stack Overflow</summary>
+                <p align="center">
+                    <img src="https://github-readme-stackoverflow.vercel.app/?userID=19328358&theme=dark"
+                         alt="daverbk Stack Overflow">
+                </p>
+            </details>
+        </td>
+        <td>
             <details><summary>Languages</summary>
                 <p align="center">
                     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=daverbk&theme=dark&langs_count=5&bg_color=101010&layout=compact&border_color=3B3B3B&text_color=CCCCCC&hide_title=true"
