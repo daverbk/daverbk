@@ -58,4 +58,19 @@
     </tr>
 </table>
 
+#### Prepping for vacation
+
+<table align="center">
+    <tr>
+        <td>
+            <details><summary>Duolingo</summary>
+                <p align="center">
+                    <img alt="daverbk duolingo streak card"
+                         src="https://duolingo-stats-card.vercel.app/api?username=daverbk&theme=dark"/>
+                </p>
+            </details>
+        </td>
+    </tr>
+</table>
+
 </div>
