@@ -51,7 +51,7 @@
             <details><summary>Recently played</summary>
                 <p align="center">
                     <img alt="daverbk sporify recently played song"
-                         src="https://spotify-github-profile.vercel.app/api/view?uid=wi1c1ih20uab1fx1qdculgcln&cover_image=true&theme=compact&show_offline=false&background_color=121212&interchange=false"/>
+                         src="https://spotify-github-profile.kittinanx.com/api/view?uid=wi1c1ih20uab1fx1qdculgcln&cover_image=true&theme=compact&show_offline=false&background_color=121212&interchange=false"/>
                 </p>
             </details>
         </td>
