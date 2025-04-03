@@ -10,7 +10,7 @@
 
 ### Numbers & Music
 
-<table>
+<table align="center">
   <tr>
     <td align="center">
       <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=daverbk&theme=dark&langs_count=6&layout=donut-vertical&border_color=3B3B3B&text_color=CCCCCC&hide=markdown" width="300" height="375" alt="GitHub Languages Stats"/>
