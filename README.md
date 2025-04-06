@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-![Profile Views](https://komarev.com/ghpvc/?username=daverbk&color=lightgrey)
+[![Profile Views](https://komarev.com/ghpvc/?username=daverbk&color=lightgrey)](https://github.com/daverbk)
 
 ### About Me
   
