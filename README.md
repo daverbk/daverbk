@@ -4,9 +4,9 @@
 
 ### About Me
   
-🐶 Bull terriers fan that is highly allergic to dogs 🐶  
-📖 Keeping study notes [here](https://daverbk.github.io/studies/) 📖  
-📸 Viby pictures taker (sometimes) 📸  
+🐶 Bull Terrier lover who’s highly allergic to dogs  
+📖 Keeping study notes [here](https://daverbk.github.io/studies/)  
+📸 Occasionally dropping lovely pics [here](https://www.instagram.com/dave.rbk/)  
 
 ### Numbers & Music
 
