@@ -1,8 +1,8 @@
-import {Octokit} from '@octokit/rest'
-import type {GetResponseDataTypeFromEndpointMethod} from '@octokit/types'
-import {env} from './env.js'
+import { Octokit } from '@octokit/rest'
+import type { GetResponseDataTypeFromEndpointMethod } from '@octokit/types'
+import { env } from './env.js'
 
-const {GIST_ID, GH_TOKEN, GH_USERNAME, EXCLUDE, EXCLUDE_REPO} = env
+const { GIST_ID, GH_TOKEN, GH_USERNAME, EXCLUDE, EXCLUDE_REPO } = env
 
 const octokit = new Octokit({
     auth: `token ${GH_TOKEN}`,
@@ -54,7 +54,7 @@ const generateStatsLines = async (
 
 const getRepoLanguage = async (repo: OctoRepo) => {
     if (repo.fork) return {}
-    const {data: languages} = await octokit.repos.listLanguages({
+    const { data: languages } = await octokit.repos.listLanguages({
         owner: GH_USERNAME,
         repo: repo.name,
     })
@@ -62,7 +62,7 @@ const getRepoLanguage = async (repo: OctoRepo) => {
 }
 
 const calculateTotalLanguages = async () => {
-    const {data: repos} = await octokit.repos.listForAuthenticatedUser({
+    const { data: repos } = await octokit.repos.listForAuthenticatedUser({
         type: 'owner',
         per_page: 100,
         sort: 'updated',
@@ -87,7 +87,7 @@ const calculateTotalLanguages = async () => {
 const updateGist = async (lines: string) => {
     let gist: Awaited<ReturnType<typeof octokit.gists.get>>['data']
     try {
-        gist = (await octokit.gists.get({gist_id: GIST_ID})).data
+        gist = (await octokit.gists.get({ gist_id: GIST_ID })).data
     } catch (error) {
         throw new Error(`Unable to get gist\n${error}`)
     }

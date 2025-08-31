@@ -8,8 +8,7 @@
     "main": "index.js",
     "scripts": {
         "start": "node index.js",
-        "prettier": "prettier --write **/*.{js,md,json,yml}",
-        "prepare": "husky install"
+        "prettier": "prettier --write **/*.{js,md,json,yml}"
     },
     "bin": {
         "github-stats-box": "index.js"
@@ -30,7 +29,6 @@
     },
     "devDependencies": {
         "@bokub/prettier-config": "^1.1.0",
-        "husky": "^8.0.0",
         "prettier": "^2.8.1",
         "pretty-quick": "^3.1.3"
     },

@@ -8,7 +8,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Update book box
-        uses: ./book-box
+        run: npm install && node index.js
+        working-directory: ./book-box
         env:
           GIST_ID: ${{ secrets.BOOKS_GIST_ID }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
@@ -28,11 +29,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: pnpm
-
       - name: Update lang box
-        run: |
-          cd ./github-lang-box && pnpm build && pnpm start
+        run: pnpm build && pnpm start
+        working-directory: ./github-lang-box
         env:
           GH_USERNAME: daverbk
           GIST_ID: ${{ secrets.LANGS_GIST_ID }}
@@ -43,12 +42,10 @@ jobs:
   stats-box:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - uses: actions/setup-node@master
-        with:
-          node-version: 16
-      - run: cd ./github-stats-box && npm install && node index.js
+      - uses: actions/checkout@v4
+      - name: Update stats box
+        run: npm install && node index.js
+        working-directory: ./github-stats-box
         env:
           GIST_ID: ${{ secrets.STATS_GIST_ID }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
@@ -59,9 +56,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: npm install
       - name: Update spotify box
-        uses: ./spoty-box
+        run: npm install && node index.js
+        working-directory: ./spoty-box
         env:
           GIST_ID: ${{ secrets.MUSIC_GIST_ID }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
