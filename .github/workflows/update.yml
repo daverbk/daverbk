@@ -1,0 +1,72 @@
+name: Update profile gists
+on:
+  workflow_dispatch:
+
+jobs:
+  book-box:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Update book box
+        uses: ./book-box
+        env:
+          GIST_ID: ${{ secrets.BOOKS_GIST_ID }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GOODREADS_LIST_ID: ${{ secrets.GOODREADS_LIST_ID }}
+
+  lang-box:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+        id: pnpm-install
+        with:
+          version: 10
+          run_install: true
+      - name: Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Update lang box
+        run: |
+          cd ./github-lang-box && pnpm build && pnpm start
+        env:
+          GH_USERNAME: daverbk
+          GIST_ID: ${{ secrets.LANGS_GIST_ID }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          EXCLUDE: ${{ vars.LANGS_EXCLUDE }}
+          EXCLUDE_REPO: ${{ vars.REPO_EXCLUDE }}
+
+  stats-box:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - uses: actions/setup-node@master
+        with:
+          node-version: 16
+      - run: cd ./github-stats-box && npm install && node index.js
+        env:
+          GIST_ID: ${{ secrets.STATS_GIST_ID }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          ALL_COMMITS: true
+          K_FORMAT: true
+
+  spoty-box:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: npm install
+      - name: Update spotify box
+        uses: ./spoty-box
+        env:
+          GIST_ID: ${{ secrets.MUSIC_GIST_ID }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          CLIENT_ID: ${{ secrets.CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+          REFRESH_TOKEN: ${{ secrets.REFRESH_TOKEN }}
+          TYPE: ${{ secrets.TYPE }}
+          TIME_RANGE: ${{ secrets.TIME_RANGE }}

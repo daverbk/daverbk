@@ -1,0 +1,45 @@
+{
+  "name": "github-lang-box",
+  "type": "module",
+  "version": "2.0.0",
+  "description": "Update a pinned gist to show your most used programming languages",
+  "license": "MIT",
+  "homepage": "https://github.com/maxchang3/github-lang-box#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxchang3/github-lang-box.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maxchang3/github-lang-box/issues"
+  },
+  "main": "dist/index.js",
+  "bin": {
+    "github-lang-box": "./bin/index.js"
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup",
+    "start": "node dist/index.js",
+    "dev": "pnpm build --watch --sourcemap",
+    "test": "vitest",
+    "release": "pnpm build && bumpp && pnpm publish",
+    "lint": "biome check",
+    "lint:fix": "biome check --write .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@octokit/rest": "^21.1.1",
+    "dotenv": "^16.5.0",
+    "zod": "^3.24.3"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@maxchang/biome-config": "^0.0.4",
+    "@octokit/types": "^14.0.0",
+    "@types/node": "^22.15.2",
+    "bumpp": "^10.1.0",
+    "tsup": "^8.4.0",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "^3.1.2"
+  }
+}

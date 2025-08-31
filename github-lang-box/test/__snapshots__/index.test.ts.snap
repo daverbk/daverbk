@@ -1,0 +1,43 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Lang box basics > should exclude languages set by \`EXCLUDE\` 1`] = `
+{
+  "files": {
+    "gistfile1.txt": {
+      "content": " TypeScript █████████░░░░░░░░░░░ 43.52%
+ JavaScript ██████░░░░░░░░░░░░░░ 29.81%
+     Python ███░░░░░░░░░░░░░░░░░ 10.13%
+       Rust ██░░░░░░░░░░░░░░░░░░  9.08%
+      Swift █░░░░░░░░░░░░░░░░░░░  3.45%
+        Vue █░░░░░░░░░░░░░░░░░░░  3.26%
+Objective-C █░░░░░░░░░░░░░░░░░░░  0.75%",
+    },
+  },
+  "gist_id": "00000000000000000000000000000000",
+}
+`;
+
+exports[`Lang box basics > should updates the Gist with the expected string 1`] = `
+{
+  "files": {
+    "gistfile1.txt": {
+      "content": " TypeScript ███████░░░░░░░░░░░░░ 31.21%
+ JavaScript █████░░░░░░░░░░░░░░░ 21.38%
+        CSS ████░░░░░░░░░░░░░░░░ 15.09%
+     Python ██░░░░░░░░░░░░░░░░░░  7.26%
+       Rust ██░░░░░░░░░░░░░░░░░░  6.51%
+       HTML ██░░░░░░░░░░░░░░░░░░  6.02%
+   Markdown █░░░░░░░░░░░░░░░░░░░  2.60%
+      Swift █░░░░░░░░░░░░░░░░░░░  2.48%
+        Vue █░░░░░░░░░░░░░░░░░░░  2.34%
+Jupyter Not…█░░░░░░░░░░░░░░░░░░░  1.80%
+      Shell █░░░░░░░░░░░░░░░░░░░  1.09%
+   Makefile █░░░░░░░░░░░░░░░░░░░  0.82%
+       YAML █░░░░░░░░░░░░░░░░░░░  0.68%
+Objective-C █░░░░░░░░░░░░░░░░░░░  0.54%
+       JSON █░░░░░░░░░░░░░░░░░░░  0.19%",
+    },
+  },
+  "gist_id": "00000000000000000000000000000000",
+}
+`;
